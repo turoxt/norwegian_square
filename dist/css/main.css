@@ -1,0 +1,257 @@
+.container {
+  max-width: 1100px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.btn-main, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.7s;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase; }
+
+.btn-main {
+  color: #333;
+  background-color: #f4f4f4;
+  opacity: 0.9; }
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333; }
+
+.btn-main:hover {
+  background-color: #333;
+  color: #f4f4f4; }
+
+.btn-dark:hover {
+  background-color: #f4f4f4;
+  color: #333; }
+
+.bg-main {
+  background: red;
+  color: #fff; }
+
+.bg-dark {
+  background: #333;
+  color: #000; }
+
+.bg-light {
+  background: #f4f4f4;
+  color: #fff; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  padding-top: 0.5rem; }
+
+.text-center {
+  text-align: center; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: red;
+  display: block;
+  margin: 0 auto 0 auto; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+ul {
+  list-style: none; }
+
+img {
+  width: 100%; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem; }
+  #main-nav h1 {
+    padding-top: 0.5rem; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    padding: 1rem 1rem; }
+  #main-nav a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.7s; }
+    #main-nav a:hover {
+      border-color: #333; }
+    #main-nav a.current {
+      border-color: #333; }
+
+#header-home {
+  background: url("../img/norway.jpg") no-repeat center right/cover;
+  height: 100vh;
+  color: #fff; }
+  #header-home .header-content {
+    text-align: center;
+    padding-top: 15%; }
+    #header-home .header-content h1 {
+      font-size: 4rem;
+      color: black;
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+
+#header-inner {
+  background: url("../img/norway.jpg") no-repeat 20% 10%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid red; }
+
+#home-a .essentials {
+  margin-top: 3rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 2rem; }
+  #home-a .essentials .fas {
+    color: red;
+    padding-bottom: 0.4rem; }
+  #home-a .essentials iframe {
+    padding-top: 1rem; }
+
+#vocabulary-a {
+  text-align: center;
+  padding: 1rem; }
+
+#vocabulary-b {
+  display: flex;
+  justify-content: space-evenly; }
+  #vocabulary-b h3 {
+    text-align: center; }
+  #vocabulary-b ul {
+    width: 300px;
+    border: 1px solid; }
+  #vocabulary-b ul li {
+    display: flex; }
+
+#learn-a .video {
+  display: flex;
+  float: left;
+  padding-right: 1rem; }
+
+#learn-a p {
+  padding-bottom: 1.5rem; }
+
+#learn-a .video-info {
+  padding-top: 2rem; }
+
+#contact-a .text-fields {
+  display: grid;
+  grid-template-areas: "name email" "level skype" "message message";
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem; }
+  #contact-a .text-fields .name-input {
+    grid-area: name; }
+  #contact-a .text-fields .level-input {
+    grid-area: level; }
+  #contact-a .text-fields .email-input {
+    grid-area: email; }
+  #contact-a .text-fields .skype-input {
+    grid-area: skype; }
+  #contact-a .text-fields .message-input {
+    grid-area: message;
+    height: 100px; }
+  #contact-a .text-fields .text-input {
+    padding: 0.5rem 1rem; }
+
+#contact-a button[type="submit"] {
+  width: 50%; }
+
+#contact-c h1 {
+  text-align: center; }
+
+#main-footer {
+  text-align: center;
+  background: #333;
+  color: #f4f4f4; }
+  #main-footer p {
+    padding-top: 2rem; }
+  #main-footer .fab {
+    color: red; }
+  #main-footer .fab.fa-facebook {
+    color: blue; }
+
+@media (min-width: 768px) and (max-width: 800px) {
+  #header-home {
+    flex-direction: column;
+    align-items: center;
+    height: 30rem; }
+  #home-a .essentials {
+    grid-template-columns: 1fr 1fr; }
+  #learn-a .video-content {
+    display: grid;
+    grid-template-columns: 1fr; }
+  #learn-a .video-content .video {
+    justify-self: center; }
+  #home-a .essentials {
+    grid-template-areas: "grammar vocabulary" "conversations conversations";
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem; }
+    #home-a .essentials .grammar {
+      grid-area: grammar; }
+    #home-a .essentials .vocabulary {
+      grid-area: vocabulary; }
+    #home-a .essentials .conversations {
+      grid-area: conversations; } }
+
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center; }
+    #main-nav li {
+      padding: 1rem; }
+  #header-home {
+    background-position: 20% 5%;
+    border-bottom: 3px solid red;
+    height: 8rem; }
+    #header-home .header-content {
+      display: none; }
+  #header-inner {
+    height: 8rem;
+    background-position: 20% 5%; }
+  #home-a .essentials {
+    grid-template-columns: 1fr; }
+  #contact-a .text-fields {
+    grid-template-areas: "name" "email" "skype" "level" "message"; } }
