@@ -111,18 +111,18 @@ img {
     padding: 1rem 1rem; }
   #main-nav a {
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: uppercase;
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
     transition: border-color 0.7s; }
     #main-nav a:hover {
-      border-color: #333; }
+      border-color: #f4f4f4; }
     #main-nav a.current {
-      border-color: #333; }
+      border-color: #f4f4f4; }
 
 #header-home {
-  background: url("../img/norway.jpg") no-repeat center right/cover;
+  background: url("../img/aurora.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
@@ -130,12 +130,12 @@ img {
     padding-top: 15%; }
     #header-home .header-content h1 {
       font-size: 4rem;
-      color: black;
+      color: white;
       padding-top: 1rem;
       padding-bottom: 1rem; }
 
 #header-inner {
-  background: url("../img/norway.jpg") no-repeat 20% 10%/cover;
+  background: url("../img/aurora.jpg") no-repeat 20% 10%/cover;
   height: 5.5rem;
   border-bottom: 3px solid red; }
 
@@ -179,7 +179,7 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: "name email" "level skype" "message message";
+  grid-template-areas: "name email" "level skype" "message message";
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem; }
   #contact-a .text-fields .name-input {
@@ -226,7 +226,7 @@ img {
   #learn-a .video-content .video {
     justify-self: center; }
   #home-a .essentials {
-    grid-template-areas: "grammar vocabulary" "conversations conversations";
+    grid-template-areas: "grammar vocabulary" "conversations conversations";
     grid-gap: 1.2rem;
     margin-bottom: 1.2rem; }
     #home-a .essentials .grammar {
@@ -254,4 +254,4 @@ img {
   #home-a .essentials {
     grid-template-columns: 1fr; }
   #contact-a .text-fields {
-    grid-template-areas: "name" "email" "skype" "level" "message"; } }
+    grid-template-areas: "name" "email" "skype" "level" "message"; } }

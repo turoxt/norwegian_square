@@ -48,18 +48,18 @@ img {
 
   a {
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: uppercase;
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
     transition: border-color 0.7s;
 
     &:hover {
-      border-color: $dark-color;
+      border-color: $light-color;
     }
 
     &.current {
-      border-color: $dark-color;
+      border-color: $light-color;
     }
   }
 }
@@ -79,7 +79,7 @@ img {
 
       h1 {
         font-size: 4rem;
-        color: black;
+        color: white;
         padding-top: 1rem;
         padding-bottom: 1rem;
       }
