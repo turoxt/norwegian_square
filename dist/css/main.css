@@ -253,5 +253,9 @@ img {
     background-position: 20% 5%; }
   #home-a .essentials {
     grid-template-columns: 1fr; }
+  #learn-a .video {
+    padding-bottom: 1rem; }
+  #learn-a .lead {
+    padding-bottom: 0; }
   #contact-a .text-fields {
     grid-template-areas: "name" "email" "skype" "level" "message"; } }

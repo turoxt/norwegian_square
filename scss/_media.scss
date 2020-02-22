@@ -80,6 +80,15 @@
 
   // Learn
 
+  #learn-a {
+    .video {
+      padding-bottom: 1rem;
+    }
+    .lead {
+      padding-bottom: 0;
+    }
+  }
+
   // Contact
   #contact {
     &-a {
