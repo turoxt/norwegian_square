@@ -177,6 +177,9 @@ img {
 #learn-a .video-info {
   padding-top: 2rem; }
 
+#learn-a .video-info .short-text {
+  display: none; }
+
 #contact-a .text-fields {
   display: grid;
   grid-template-areas: "name email" "level skype" "message message";
@@ -258,5 +261,9 @@ img {
   #learn-a .video-content {
     display: grid;
     grid-template-columns: 1fr; }
+  #learn-a .video-info .short-text {
+    display: inline-block; }
+  #learn-a .video-info .long-text {
+    display: none; }
   #contact-a .text-fields {
     grid-template-areas: "name" "email" "skype" "level" "message"; } }

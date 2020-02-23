@@ -88,6 +88,12 @@
       display: grid;
       grid-template-columns: 1fr;
     }
+    .video-info .short-text{
+      display: inline-block;
+    }
+    .video-info .long-text{
+      display: none;
+    }
   }
 
   // Contact
