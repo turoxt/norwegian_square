@@ -81,11 +81,12 @@
   // Learn
 
   #learn-a {
-    .video {
-      padding-bottom: 1rem;
-    }
     .lead {
       padding-bottom: 0;
+    }
+    .video-content {
+      display: grid;
+      grid-template-columns: 1fr;
     }
   }
 
