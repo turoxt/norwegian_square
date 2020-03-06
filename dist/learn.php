@@ -16,12 +16,12 @@
     <header id="header-inner">
       <div class="container">
         <nav id="main-nav">
-          <h1><a href="index.html">Norwegian Square</a></h1>
+          <h1><a href="index.php">Norwegian Square</a></h1>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="codex.html">Index</a></li>
-            <li><a href="learn.html" class="current">Learn</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="codex.php">Index</a></li>
+            <li><a href="learn.php" class="current">Learn</a></li>
+            <li><a href="contact.php">Contact</a></li>
           </ul>
         </nav>
       </div>

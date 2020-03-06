@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/main.css" />
-    <script
-      src="https://kit.fontawesome.com/c5c489477c.js"
-      crossorigin="anonymous"
-    ></script>
+    <script>
+      function showTranslation(str){
+      if(str.length == 0){
+        document.getElementById('output').innerHTML = '';
+      } else {
+        // AJAX REQ
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function(){
+          if(this.readyState == 4 && this.status == 200){
+            document.getElementById('output').
+              innerHTML = this.responseText
+          }
+        }
+        xmlhttp.open("GET", "words.php?q="+str, true);
+        xmlhttp.send();
+      }
+    }
+    </script>
     <title>Index</title>
   </head>
   <body>
@@ -16,12 +30,12 @@
     <header id="header-inner">
       <div class="container">
         <nav id="main-nav">
-          <h1><a href="index.html">Norwegian Square</a></h1>
+          <h1><a href="index.php">Norwegian Square</a></h1>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="codex.html" class="current">Index</a></li>
-            <li><a href="learn.html">Learn</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="codex.php" class="current">Index</a></li>
+            <li><a href="learn.php">Learn</a></li>
+            <li><a href="contact.php">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -34,14 +48,11 @@
           <h1 class="dictionary">Dictionary</h1>
           <div class="bottom-line"></div>
           <div class="forms py-1">
-            <p>Norsk</p>
+            <p>Norsk = Norwegian</p>
             <form id="search">
-              <input type="text" placeholder="Brunost" />
+              <input type="text" placeholder="Norsk" class="form-control" onkeyup="showTranslation(this.value)"/>
             </form>
-            <p>English</p>
-            <form id="search">
-              <input type="text" placeholder="Brown cheese" />
-            </form>
+            <p> <span id="output" style="font-weight:bold"></span></p>
           </div>
         </div>
         <div id="vocabulary-b">

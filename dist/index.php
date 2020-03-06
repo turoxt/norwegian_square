@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/main.css" />
     <script
       src="https://kit.fontawesome.com/c5c489477c.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <title>Norwegian Square</title>
   </head>
   <body>
@@ -18,12 +18,12 @@
     <header id="header-home">
       <div class="container">
         <nav id="main-nav">
-          <h1><a href="index.html">Norwegian Square</a></h1>
+          <h1><a href="index.php">Norwegian Square</a></h1>
           <ul>
-            <li><a href="index.html" class="current">Home</a></li>
-            <li><a href="codex.html">Index</a></li>
-            <li><a href="learn.html">Learn</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.php" class="current">Home</a></li>
+            <li><a href="codex.php">Index</a></li>
+            <li><a href="learn.php">Learn</a></li>
+            <li><a href="contact.php">Contact</a></li>
           </ul>
         </nav>
         <div id="showcase">
@@ -37,7 +37,7 @@
                   data-words='["Norwegian", "Norsk", "Bokmål"]'
                 ></span>
               </h1>
-              <a href="learn.html" class="btn-main">Let's Begin</a>
+              <a href="learn.php" class="btn-main">Let's Begin</a>
             </div>
           </div>
         </div>
