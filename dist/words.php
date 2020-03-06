@@ -19,6 +19,7 @@ $words[] = "smør = butter";
 $words[] = "brus = soda";
 $words[] = "rømme = sour cream";
 $words[] = "appelsin = orange";
+$words[] = "pære = pear";
 
 
 // Get Query String
