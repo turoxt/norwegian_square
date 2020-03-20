@@ -94,13 +94,13 @@
 }
 
 // Smartphones
-@media (max-width: 500px) {
+@media (min-width: 400px) and (max-width: 500px) {
   #main-nav {
     flex-direction: column;
     align-items: center;
 
     li {
-      padding: 3rem;
+      padding: 1rem;
     }
   }
 
@@ -159,3 +159,74 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+
+    #main-nav {
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        display: none;
+      }
+  
+      li {
+        padding: 1rem;
+      }
+    }
+  
+    // Header
+    #header {
+      &-home {
+        background-position: 20% 5%;
+        border-bottom: 3px solid $main-color;
+        height: 8rem;
+  
+        .header-content {
+          display: none;
+        }
+      }
+  
+      &-inner {
+        height: 8rem;
+        background-position: 20% 5%;
+      }
+    }
+  
+    // Stack Grid Columns
+    #home-a .essentials {
+      grid-template-columns: 1fr;
+    }
+  
+    // Learn
+  
+    #learn-a {
+      .lead {
+        padding-bottom: 0;
+      }
+      .video-content {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .video-info .short-text{
+        display: inline-block;
+      }
+      .video-info .long-text{
+        display: none;
+      }
+    }
+  
+    // Contact
+    #contact {
+      &-a {
+        .text-fields {
+          grid-template-areas:
+            "name"
+            "email"
+            "skype"
+            "level"
+            "message";
+        }
+      }
+    }
+  }
