@@ -151,9 +151,39 @@ img {
   #home-a .essentials iframe {
     padding-top: 1rem; }
 
+#vocabulary #row-1 {
+  background: #cbe1ef; }
+
+#vocabulary #row-2 {
+  background: #f4e2be; }
+
+#vocabulary #row-3 {
+  background: #ffcccb; }
+
+#vocabulary .row {
+  width: 25rem;
+  text-align: start;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  border-radius: 5px; }
+
+#vocabulary .col {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem; }
+
+#vocabulary-t {
+  text-align: center; }
+
 #vocabulary-a {
   text-align: center;
   padding: 1rem; }
+  #vocabulary-a form {
+    border-radius: 10px; }
+    #vocabulary-a form ::placeholder {
+      color: #0275d8; }
 
 #vocabulary-b {
   display: flex;
@@ -216,13 +246,33 @@ img {
   #main-footer .fab.fa-facebook {
     color: blue; }
 
+@media (min-width: 500px) and (max-width: 980px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center; }
+    #main-nav li {
+      padding: 1rem; }
+  #header-home {
+    background-position: 20% 5%;
+    border-bottom: 3px solid red;
+    height: 8rem; }
+    #header-home .header-content {
+      display: none; }
+  #header-inner {
+    height: 8rem;
+    background-position: 20% 5%; } }
+
+@media (min-width: 800px) and (max-width: 1100px) {
+  #home-a .essentials {
+    grid-template-columns: 1fr; } }
+
 @media (min-width: 768px) and (max-width: 800px) {
   #header-home {
     flex-direction: column;
     align-items: center;
     height: 30rem; }
   #home-a .essentials {
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr; }
   #learn-a .video-content {
     display: grid;
     grid-template-columns: 1fr; }
@@ -238,6 +288,10 @@ img {
       grid-area: vocabulary; }
     #home-a .essentials .conversations {
       grid-area: conversations; } }
+
+@media (min-width: 500px) and (max-width: 768px) {
+  #home-a .essentials {
+    grid-template-columns: 1fr; } }
 
 @media (max-width: 500px) {
   #main-nav {

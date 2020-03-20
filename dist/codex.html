@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
     <script
       src="https://kit.fontawesome.com/c5c489477c.js"
       crossorigin="anonymous"
@@ -34,60 +36,117 @@
           <h1 class="dictionary">Dictionary</h1>
           <div class="bottom-line"></div>
           <div class="forms py-1">
-            <p>Norsk = Norwegian</p>
-            <form id="search">
-              <input type="text" placeholder="Norsk"/>
+            <form class="mt-3" id="search">
+              <input class="text-primary" type="text" placeholder="Norsk"/>
             </form>
           </div>
         </div>
-        <div id="vocabulary-b">
-          <div class="words">
-            <div class="animals py-1">
-              <h3>Animals</h3>
-              <ul>
-                <li><a href="#">Dyr</a> = Animal(s)</li>
-                <li><a href="#">Apekatt</a> = Monkey</li>
-                <li><a href="#">Hund</a> = Dog</li>
-                <li><a href="#">Hai</a> = Shark</li>
-                <li><a href="#">Ku</a> = Cow</li>
-                <li><a href="#">Ekorn</a> = Squirrel</li>
-                <li><a href="#">Elg</a> = Moose</li>
-                <li><a href="#">Reinsdyr</a> = Reindeer</li>
-                <li><a href="#">Bjørn</a> = Bear</li>
-              </ul>
-            </div>
-            <div class="housing py-1">
-              <h3>Housing</h3>
-              <ul>
-                <li><a href="#">Bolig</a> = Housing</li>
-                <li><a href="#">Dør</a> = Door</li>
-                <li><a href="#">Vegg</a> = Dør</li>
-                <li><a href="#">Vindu</a> = Window</li>
-                <li><a href="#">Tak</a> = Ceiling/Roof</li>
-                <li><a href="#">Speil</a> = Mirror</li>
-                <li><a href="#">Seng</a> = Bed</li>
-                <li><a href="#">Stol</a> = Chair</li>
-                <li><a href="#">Bord</a> = Table</li>
-                <li><a href="#">Gulv</a> = Floor</li>
-                <li><a href="#">Kjøkken</a> = Kitchen</li>
-                <li><a href="#">Stue</a> = Livingroom</li>
-                <li><a href="#">Bad</a> = Bathroom</li>
-              </ul>
-            </div>
-            <div class="food py-1">
-              <h3>Food</h3>
-              <ul>
-                <li><a href="#">Mat</a> = Food</li>
-                <li><a href="#">Frukt</a> = Fruit(s)</li>
-                <li><a href="#">Eple</a> = Apple</li>
-                <li><a href="#">Appelsin</a> = Orange</li>
-                <li><a href="#">Kake</a> = Cake</li>
-                <li><a href="#">Brød</a> = Bread</li>
-                <li><a href="#">Nøtter</a> = Nuts</li>
-                <li><a href="#">Melk</a> = Milk</li>
-                <li><a href="#">Ost</a> = Cheese</li>
-              </ul>
-            </div>
+
+      <div id="vocabulary-t" class="container">
+        <h3 class="mb-3">Animals</h3>
+        <div id="row-1" class="row">
+          <div class="col text-primary">  
+            <strong>Norsk</strong><br>
+            Dyr <br>
+            Katt <br>
+            Hund <br>
+            Fugl <br>
+            Hest <br>
+            Ku <br>
+            Hval<br>
+          </div>
+          <div class="col text-success">
+            <br>
+            <br>
+            <br>
+            [hunn] <br>
+            [ful] <br>
+            <br>
+            <br>
+            [val]
+
+          </div>
+          <div class="col text-danger">
+            <strong>English</strong><br>
+            Animals <br>
+            Cat <br>
+            Dog <br>
+            Bird <br>
+            Horse <br>
+            Cow <br>
+            Whale <br>
+          </div>
+        </div>
+        <h3 class="mb-3">Food</h3>
+        <div id="row-2" class="row">
+          <div class="col text-primary">  
+            <strong>Norsk</strong> <br>
+            Mat <br>
+            Brød <br>
+            Ost <br>
+            Smør <br>
+            Syltetøy <br>
+            Kjøtt <br>
+            Kylling<br>
+          </div>
+          <div class="col text-success">
+            <br>
+            <br>
+            [Brø]<br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+
+          </div>
+          <div class="col text-danger">
+            <strong>English</strong> <br>
+            Food <br>
+            Bread <br>
+            Cheese <br>
+            Butter <br>
+            Jam <br>
+            Meat <br>
+            Chicken<br>
+          </div>
+        </div>
+      </div>
+
+      <div id="vocabulary-t" class="container">
+        <h3 class="mb-3">Housing</h3>
+        <div id="row-3" class="row">
+          <div class="col text-primary">  
+            <strong>Norsk</strong><br>
+            Bolig <br>
+            Dør <br>
+            Vegg <br>
+            Vindu <br>
+            Tak <br>
+            Speil <br>
+            Seng<br>
+          </div>
+          <div class="col text-success">
+            [Boli]<br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
+          <div class="col text-danger">
+            <strong>English</strong><br>
+            Housing <br>
+            Door <br>
+            Wall <br>
+            Window <br>
+            Roof <br>
+            Mirror <br>
+            Bed<br>
+          </div>
+        </div>
           </div>
         </div>
       </div>
