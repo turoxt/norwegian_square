@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Norwegian Square</title>
+</head>
+<body data-target="#main-nav" id="home">
+
+    <!-- Navbar -->
+  <header id="header-inner">
+    <nav class="navbar navbar-expand py-2" id="main-nav">
+      <div class="container div-1">
+        <a href="index.html" class="navbar-brand text-white">Norwegian Square</a>
+        <div class="nav-content">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-white">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="dictionary.html" class="nav-link text-white current">Dictionary</a>
+            </li>
+            <li class="nav-item">
+              <a href="learn.html" class="nav-link text-white">Learn</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link text-white">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Dictionary -->
+
+  <section id="dictionary" class="text-center py-5">
+    <div class="container">
+      <h2 class="section-title">Dictionary</h2>
+      <div class="bottom-line"></div>
+      <div class="forms py-1">
+        <form class="mt-3" id="search">
+          <input class="text-primary" type="text" placeholder="Norsk"/>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accordion -->
+
+  <div id="accordion">
+    <div class="card" style="width: 40rem;">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <div href="#collapse1" class="text-center" data-toggle="collapse" data-parent="#accordion">
+            <i class="fa fa-paw text-danger"></i> Animals
+          </div>
+        </h5>
+      </div>
+
+      <div id="collapse1" class="collapse">
+        <div class="row text-center py-5">
+          <div class="col-md-4 card-body">
+            1. Elg = Moose <br>
+            2. Hund = Dog <br>
+            3. Katt = Cat <br>
+            4. Isbjørn = Polar bear <br>
+            5. Sel = Seal <br>
+            6. Ku = Cow <br>
+            7. Hest = Horse <br>
+            8. Rev = Fox <br>
+            9. Ulv = Wolf <br>
+            10. Ekorn = Squirrel
+          </div>
+          <div class="col-md-6 card-body">
+            <img src="/dist/img/Moose.jpg" class="pb-2" alt="" width= "200">
+            <a href="#" class="btn-darker" data-toggle="modal" data-target="#Elg">Elg</a>
+
+            <div class="modal" id="Elg">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-danger">The Moose</h5>
+                  </div>
+                  <div class="modal-body">
+                    The moose is the national animal of Norway. It likes to stay in the wilderness and loves vegetables.
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn-darker" data-dismiss="modal">Close</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="width: 40rem;">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <div href="#collapse2" class="text-center" data-toggle="collapse" data-parent="#accordion">
+            <i class="fa fa-apple text-danger"></i> Food
+          </div>
+        </h5>
+      </div>
+
+      <div id="collapse2" class="collapse">
+        <div class="row text-center py-5">
+          <div class="col-md-4 card-body">
+            1. Mat = Food <br>
+            2. Gulrot = Carrot <br>
+            3. Brød = Bread <br>
+            4. Kaffe = Coffee <br>
+            5. Smør = Butter <br>
+            6. Fisk = Fish <br>
+            7. Kjøtt = Meat <br>
+            8. Melk = Milk <br>
+            9. Ost = Cheese <br>
+            10. Skinke = Ham
+          </div>
+          <div class="col-md-6 card-body">
+            <img src="/dist/img/Torsk.jpg" class="pb-2" alt="" width= "200">
+            <a href="#" class="btn-darker" data-toggle="modal" data-target="#Torsk">Fish</a>
+
+            <div class="modal" id="Torsk">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-danger">The cod</h5>
+                  </div>
+                  <div class="modal-body">
+                    Cod = torsk, the cod is the most important fish in Norway. A lot of Norwegians eat the cod every year. It is so important that it is placed on the 200 dollar bill.
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn-darker text-white" data-dismiss="modal">Close</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="card" style="width: 40rem;">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <div href="#collapse3" class="text-center" data-toggle="collapse" data-parent="#accordion">
+            <i class="fa fa-graduation-cap text-danger"></i> Clothing
+          </div>
+        </h5>
+      </div>
+
+      <div id="collapse3" class="collapse">
+        <div class="row text-center py-5">
+          <div class="col-md-4 card-body">
+            1. Genser = Sweater <br>
+            2. Lue = Winter hat <br>
+            3. Hanske = Glove <br>
+            4. Jakke = Jacket <br>
+            5. Sokk = Sock <br>
+            6. T-skjorte = T-shirt <br>
+            7. Bukse = Pants <br>
+            8. Briller = Glasses <br>
+            9. Sko = Shoe(s) <br>
+            10. Hatt = Hat
+          </div>
+          <div class="col-md-6 card-body">
+            <img src="/dist/img/Genser.jpg" class="pb-2" alt="" width= "200">
+            <a href="#" class="btn-darker" data-toggle="modal" data-target="#Genser">Sweater</a>
+
+            <div class="modal" id="Genser">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-danger">Sweater</h5>
+                  </div>
+                  <div class="modal-body">
+                    <div><img src="/dist/img/Genser.jpg" class="pb-2" alt="" width= "200"></div>
+                    The most famous sweater in Norway is the "olagenser" as shown in the picture above. It is very good to wear in cold climates.
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn-darker" data-dismiss="modal">Close</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="card" style="width: 40rem;">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <div href="#collapse4" class="text-center" data-toggle="collapse" data-parent="#accordion">
+            <i class="fa fa-bed text-danger"></i> Housing
+          </div>
+        </h5>
+      </div>
+
+      <div id="collapse4" class="collapse">
+        <div class="row text-center py-5">
+          <div class="col-md-4 card-body">
+            1. Bolig = Housing <br>
+            2. Tak = Ceiling/roof <br>
+            3. Gulv = Floor <br>
+            4. Vegg = Wall <br>
+            5. Vindu = Window <br>
+            6. Teppe = Carpet <br>
+            7. Bord = Table <br>
+            8. Stol = Chair <br>
+            9. Seng = Bed <br>
+            10. Sofa = Sofa
+          </div>
+          <div class="col-md-6 card-body">
+            <img src="/dist/img/Hus.jpg" class="pb-2" alt="" width= "200">
+            <a href="#" class="btn-darker" data-toggle="modal" data-target="#Hus">Hus</a>
+
+            <div class="modal" id="Hus">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-danger">Hus</h5>
+                  </div>
+                  <div class="modal-body">
+                    The houses in Norway are very solid and warm in during both the summer and the winter. They are beautiful in many colours and sizes.
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn-darker" data-dismiss="modal">Close</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="card" style="width: 40rem;">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <div href="#collapse5" class="text-center" data-toggle="collapse" data-parent="#accordion">
+            <i class="fa fa-envira text-danger"></i> Kitchen
+          </div>
+        </h5>
+      </div>
+
+      <div id="collapse5" class="collapse">
+        <div class="row text-center py-5">
+          <div class="col-md-4 card-body">
+            1. Kjøkken = Kitchen <br>
+            2. Vask = Sink <br>
+            3. Stekeovn = Oven <br>
+            4. Kjøkkenbenk = Kitchen desk <br>
+            5. Fryser = Freezer <br>
+            6. Kniv = Knife <br>
+            7. Skje = Spoon <br>
+            8. Tallerken = Plate <br>
+            9. Kjøleskap = Refrigerator <br>
+            10. Gaffel = Fork
+          </div>
+          <div class="col-md-6 card-body">
+            <img src="/dist/img/Kjøkken.jpg" class="pb-2" alt="" width= "200">
+            <a href="#" class="btn-darker" data-toggle="modal" data-target="#Kjøkken">Kitchen</a>
+
+            <div class="modal" id="Kjøkken">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-danger">Kitchen</h5>
+                  </div>
+                  <div class="modal-body">
+                    The kitchen in Norway is normally very big and stylish. Norwegians like to have room when making their dinner.
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn-darker" data-dismiss="modal">Close</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="main-footer" class="py-4 bg-dark text-white text-center">
+    <div class="footer-content container">
+      <p>Copyright &copy; <span id="year"></span>, All Rights Reserved</p>
+      <div class="d-flex justify-content-center">
+        <div class="p-1">
+          <a href="https://www.facebook.com/norwegiansquare/">
+          <i class="fa fa-facebook fa-2x"></i>
+          </a>
+        </div>
+        <div class="p-1">
+          <a href="https://www.youtube.com/channel/UC3-oAgD_Tl_t8cNpv6r2E8w">
+            <i class="fa fa-youtube fa-2x text-danger"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- JS SCRIPTS -->
+
+<script>
+  // Get the current year for the copyright
+  $('#year').text(new Date().getFullYear());
+</script>
+
+</body>
+</html>

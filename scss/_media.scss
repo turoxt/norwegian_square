@@ -1,210 +1,49 @@
-// Title for all devices
-@media (min-width: 500px) and (max-width: 980px) {
-  #main-nav {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 750px) {
 
-    li {
-      padding: 3rem;
-    }
-  }
-
-  // Header
+  // HEADER
   #header {
-    &-home {
-      background-position: 20% 5%;
-      border-bottom: 3px solid $main-color;
-      height: 8rem;
 
-      .header-content {
-        display: none;
-      }
-    }
+  &-home,
+  &-inner {
 
-    &-inner {
-      height: 8rem;
-      background-position: 20% 5%;
-    }
-  }
-}
-// Larger devices
+    border-bottom: 3px solid $main-color;
+    height: 7.5rem !important;
+    background-position: 20% 10% !important;
 
-@media (min-width: 799px) and (max-width: 980px) {
-  #main-nav {
-    display: grid;
-    grid-template-columns: 1fr;
-
-  ul {
-    justify-self: center;
-  }  
-
-  li {
-    padding: 1rem;
-    font-size: middle;
-  }
-
-  h2 {
-    font-size: x-large;
-    text-align: center;
-  }
-}
-
-  #home-a {
-    .essentials {
-      grid-template-columns: 1fr;
-    }
-  }
-}
-
-// Tablets & Smaller
-@media (min-width: 768px) and (max-width: 800px) {
-
-  #home-a {
-    .essentials {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  #learn-a {
-    .video-content {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-
-    .video-content .video {
-      justify-self: center;
-    }
-  }
-
-  // Stack Grid Columns
-  #home-a .essentials {
-    grid-template-areas:
-      "grammar vocabulary"
-      "conversations conversations";
-    grid-gap: 1.2rem;
-    margin-bottom: 1.2rem;
-
-    // Grid Areas
-    .grammar {
-      grid-area: grammar;
-    }
-    .vocabulary {
-      grid-area: vocabulary;
-    }
-    .conversations {
-      grid-area: conversations;
-    }
-  }
-}
-
-// Middle devices
-
-@media (min-width: 480px) and (max-width: 768px) {
-  #main-nav {
-    display: grid;
-    grid-template-columns: 1fr;
-
-  ul {
-    justify-self: center;
-  }  
-
-  li {
-    padding: 1rem;
-    font-size: middle;
-  }
-
-  h2 {
-    font-size: x-large;
-    text-align: center;
-  }
-}
-
-  #home-a {
-    .essentials {
-      grid-template-columns: 1fr;
-    }
-  }
-}
-
-// Smartphones
-@media (max-width: 480px) {
-  #main-nav {
-      display: grid;
-      grid-template-columns: 1fr;
-
-    ul {
-      justify-self: center;
-    }  
-
-    li {
-      padding: 1rem;
-      font-size: small;
-    }
-
-    h2 {
-      font-size: large;
-      text-align: center;
-    }
-  }
-
-  // Header
-  #header {
-    &-home {
-      background-position: 20% 5%;
-      border-bottom: 3px solid $main-color;
-      height: 8rem;
-
-      .header-content {
-        display: none;
-      }
-    }
-
-    &-inner {
-      height: 8rem;
-      background-position: 20% 5%;
-    }
-  }
-
-  // Stack Grid Columns
-  #home-a .essentials {
-    grid-template-columns: 1fr;
-  }
-
-  // Codex
-
-  #oral {
-    display:none;
-  }
-
-  // Learn
-
-  #learn-a {
-    .lead {
-      padding-bottom: 0;
-    }
-    .video-content {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-    .video-info .short-text{
-      display: inline-block;
-    }
-    .video-info .long-text{
+    .header-content {
       display: none;
     }
-  }
 
-  // Contact
-  #contact {
-    &-a {
-      .text-fields {
-        grid-template-areas:
-          "name"
-          "email"
-          "skype"
-          "level"
-          "message";
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      text-align: center;
+      border-bottom: none;
       }
+
+      .nav-content {
+        justify-self: center;
+
+        ul {
+          background: $dark-color;
+          opacity: 0.9;
+          font-size: 13px;
+        }
+      }  
     }
   }
+}
+
+// Dictionary
+
+// Accordion
+
+#accordion {
+  .card {
+    width: 20rem !important;
+  }
+}
 }

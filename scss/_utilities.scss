@@ -1,11 +1,33 @@
-.container {
-  max-width: $website-width;
-  padding: 0 1.5rem;
-  margin: auto;
-  overflow: hidden;
+$light-color: white;
+$main-color: red;
+$dark-color: #333;
+
+
+
+// HOVER EFFECT
+  #header {
+    &-home,
+    &-inner {
+    .div-1 a {
+      text-transform: uppercase;
+      border-bottom: 3px transparent solid;
+      transition: border-color 0.7s;
+    
+      &:hover {
+        border-color: $light-color;
+      }
+
+      &.current {
+        border-color: $light-color;
+      }
+    }
+    .navbar-brand {
+      font-size: 3rem;
+    }
+  }
 }
 
-// Buttons
+// BUTTONS
 %btn-shared {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -23,9 +45,9 @@
     opacity: 0.9;
   }
 
-  &-dark {
+  &-darker {
     @extend %btn-shared;
-    color: $light-color;
+    color: $light-color !important;
     background-color: $dark-color;
   }
 }
@@ -34,67 +56,13 @@
   &-main:hover {
     background-color: $dark-color;
     color: $light-color;
+    text-decoration: none;
   }
 
-  &-dark:hover {
+  &-darker:hover {
     background-color: $light-color;
-    color: $dark-color;
-  }
-}
-// Backgrounds
-.bg {
-  &-main {
-    background: $main-color;
-    color: set-text-color($main-color);
-  }
-  &-dark {
-    background: $dark-color;
-    color: set-text-color($light-color);
-  }
-  &-light {
-    background: $light-color;
-    color: set-text-color($dark-color);
-  }
-}
-.lead {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-  padding-top: 0.5rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
-// Padding
-.py {
-  &-1 {
-    padding: 1rem 0;
-  }
-  &-2 {
-    padding: 2rem 0;
-  }
-  &-3 {
-    padding: 3rem 0;
-  }
-  &-4 {
-    padding: 4rem 0;
-  }
-}
-
-// Margin
-.my {
-  &-1 {
-    margin: 1rem 0;
-  }
-  &-2 {
-    margin: 2rem 0;
-  }
-  &-3 {
-    margin: 3rem 0;
-  }
-  &-4 {
-    margin: 4rem 0;
+    color: $dark-color !important;
+    text-decoration: none;
   }
 }
 
@@ -105,3 +73,4 @@
   display: block;
   margin: 0 auto 0 auto;
 }
+

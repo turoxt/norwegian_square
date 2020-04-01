@@ -1,296 +1,70 @@
-@import "config";
 @import "utilities";
+@import "media";
 
-// General Styles
-* {
-  margin: 0;
-  padding: 0;
-}
+// VARIABLES
+$website-width: 1100px;
+$light-color: white;
+$main-color: red;
+$dark-color: #333;
+$bg-image: url("../img/aurora.jpg");
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  background: $light-color;
-}
 
-a {
-  text-decoration: none;
-  color: $dark-color;
-}
-
-ul {
-  list-style: none;
-}
-
-img {
-  width: 100%;
-}
-
-// h1
-
-// Main Nav
-#main-nav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1rem;
-
-  h1 {
-    padding-top: 0.5rem;
-  }
-
-  ul {
-    display: flex;
-  }
-
-  li {
-    padding: 1rem 1rem;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    border-bottom: 3px transparent solid;
-    padding-bottom: 1rem;
-    transition: border-color 0.7s;
-
-    &:hover {
-      border-color: $light-color;
-    }
-
-    &.current {
-      border-color: $light-color;
-    }
-  }
-}
-
-// Header
+// HEADER
 #header {
   // Header Home
   &-home {
     background: $bg-image no-repeat center right / cover;
     height: 100vh;
-    color: #fff;
-
-    // Header Content
-    .header-content {
-      text-align: center;
-      padding-top: 15%;
-
-      h1 {
-        font-size: 4rem;
-        color: white;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-      }
-    }
   }
-
+  // Header Inner
   // Header Inner
   &-inner {
     background: $bg-image no-repeat 20% 10% / cover;
-    height: 5.5rem;
+    height: 7.5rem;
     border-bottom: 3px solid $main-color;
   }
 }
 
-// Home Section
-#home {
-  &-a {
+#showcase {
+  .container {
 
-    h2 {
-      padding-top: 3rem;
-    }
+    padding-top: 8rem;
+  }
 
-    .essentials {
-      margin-top: 3rem;
-      display: grid;
-      grid-gap: 1rem;
-      grid-template-columns: repeat(3, 1fr);
-      padding-bottom: 2rem;
-
-      .fas {
-        color: $main-color;
-        padding-bottom: 0.4rem;
-      }
-
-      iframe {
-        padding-top: 1rem;
-      }
-    }
+  h3 {
+    font-size: 70px;
+    padding-bottom: 2rem;
   }
 }
 
-// Index Section
+// Dictionary
 
+// Accordion
 
-#vocabulary {
-
-  #row-1 {
-    background: #cbe1ef;
+#accordion {
+  .card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
   }
 
-  #row-2 {
-    background: #f4e2be;
+  .modal-title {
+    margin: auto;
   }
 
-  #row-3 {
-    background: #ffcccb;
-  }
-
-  .row {
-    width: 22rem;
-    text-align: start;
-    margin-left: auto; 
-    margin-right: auto;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-  }
-
-  .col {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
-
-  &-t {
-    text-align: center;
-  }
-
-  &-a {
-    text-align: center;
-    padding: 1rem;
-
-    h2 {
-      padding-top: 3rem;
-    }
-
-    form {
-      border-radius: 10px;
-
-      ::placeholder {
-        color: #0275d8;
-      }
-    }
-  }
-
-  &-b {
-    display: flex;
-    justify-content: space-evenly;
-
-    h3 {
-      text-align: center;
-    }
-
-    ul {
-      width: 300px;
-      border: 1px solid;
-    }
-
-    ul li {
-      display: flex;
-    }
+  .modal-footer {
+    margin: auto;
   }
 }
 
-// Learn Section
-#learn {
-  &-a {
+// Contact
 
-    h2 {
-      padding-top: 3rem;
-    }
-
-    .video {
-      display: flex;
-      float: left;
-      padding-right: 1rem;
-    }
-
-    p {
-      padding-bottom: 1.5rem;
-    }
-
-    .video-info {
-      padding-top: 2rem;
-    }
-    .video-info .short-text {
-      display: none;
-    }
-  }
-}
-
-// Contact Page
 #contact {
   &-a {
-
-    h2 {
-      padding-top: 3rem;
-    }
-
-    .text-fields {
-      display: grid;
-      grid-template-areas:
-        "name email"
-        "level skype"
-        "message message";
-      grid-gap: 1.2rem;
-      margin-bottom: 1.2rem;
-
-      // Grid Areas
-      .name-input {
-        grid-area: name;
-      }
-      .level-input {
-        grid-area: level;
-      }
-      .email-input {
-        grid-area: email;
-      }
-      .skype-input {
-        grid-area: skype;
-      }
-      .message-input {
-        grid-area: message;
-        height: 100px;
-      }
-
-      .text-input {
-        padding: 0.5rem 1rem;
-      }
-    }
-
     button[type="submit"] {
       width: 50%;
-    }
-  }
-
-  &-c {
-    h1 {
-      text-align: center;
+      margin: auto;
     }
   }
 }
 
-// Footer
-#main-footer {
-  text-align: center;
-  background: $dark-color;
-  color: $light-color;
-
-  p {
-    padding-top: 2rem;
-  }
-
-  .fab {
-    color: $main-color;
-  }
-
-  .fab.fa-facebook {
-    color: blue;
-  }
-}
-
-// Import Media Queries
-@import "media";
