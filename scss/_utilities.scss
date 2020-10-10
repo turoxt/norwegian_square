@@ -43,12 +43,14 @@ $dark-color: #333;
     color: $dark-color;
     background-color: $light-color;
     opacity: 0.9;
+    border-radius: 10px;
   }
 
   &-darker {
     @extend %btn-shared;
     color: $light-color !important;
     background-color: $dark-color;
+    border-radius: 10px;
   }
 }
 
