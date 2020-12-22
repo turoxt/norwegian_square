@@ -52,6 +52,14 @@ $dark-color: #333;
     background-color: $dark-color;
     border-radius: 10px;
   }
+
+  &-red {
+    @extend %btn-shared;
+    color: $light-color;
+    background-color:  #d9534f;
+    border-radius: 10px;
+    width: 185px;
+  }
 }
 
 .btn {

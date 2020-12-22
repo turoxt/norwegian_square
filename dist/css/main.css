@@ -10,7 +10,7 @@
 #header-home .navbar-brand, #header-inner .navbar-brand {
   font-size: 3rem; }
 
-.btn-main, .btn-darker {
+.btn-main, .btn-darker, .btn-red {
   display: inline-block;
   padding: 0.8rem 2rem;
   transition: all 0.7s;
@@ -28,6 +28,12 @@
   color: white !important;
   background-color: #333;
   border-radius: 10px; }
+
+.btn-red {
+  color: white;
+  background-color: #d9534f;
+  border-radius: 10px;
+  width: 185px; }
 
 .btn-main:hover {
   background-color: #333;
