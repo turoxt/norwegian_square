@@ -85,6 +85,9 @@
   font-size: 70px;
   padding-bottom: 2rem; }
 
+#reviews-content .avatar {
+  border-radius: 90%; }
+
 #accordion .card {
   margin: 0 auto;
   float: none;
@@ -99,3 +102,8 @@
 #contact-a button[type="submit"] {
   width: 50%;
   margin: auto; }
+
+#contact-a .form1 {
+  text-align: center;
+  width: 185px;
+  display: inline-block; }

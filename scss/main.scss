@@ -37,6 +37,16 @@ $bg-image: url("../img/aurora.jpg");
   }
 }
 
+// Reviews
+
+#reviews {
+  &-content {
+    .avatar {
+      border-radius: 90%;
+    }
+  }
+}
+
 // Dictionary
 
 // Accordion
@@ -64,6 +74,11 @@ $bg-image: url("../img/aurora.jpg");
     button[type="submit"] {
       width: 50%;
       margin: auto;
+    }
+    .form1 {
+      text-align: center;
+      width: 185px;
+      display: inline-block;
     }
   }
 }
