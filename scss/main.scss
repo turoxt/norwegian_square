@@ -54,7 +54,7 @@ $bg-image: url("../img/aurora.jpg");
 #accordion {
   .card {
     margin: 0 auto;
-    float: none;
+    text-align:center;
     margin-bottom: 10px;
   }
 
@@ -81,5 +81,12 @@ $bg-image: url("../img/aurora.jpg");
       display: inline-block;
     }
   }
+}
+
+// Footer
+
+#main-footer {
+  padding-bottom: 28px;
+  padding-top: 28px;
 }
 

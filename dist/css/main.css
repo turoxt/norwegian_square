@@ -96,7 +96,7 @@
 
 #accordion .card {
   margin: 0 auto;
-  float: none;
+  text-align: center;
   margin-bottom: 10px; }
 
 #accordion .modal-title {
@@ -113,3 +113,7 @@
   text-align: center;
   width: 185px;
   display: inline-block; }
+
+#main-footer {
+  padding-bottom: 28px;
+  padding-top: 28px; }
