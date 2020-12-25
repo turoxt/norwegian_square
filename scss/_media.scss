@@ -19,10 +19,16 @@
       grid-template-columns: 1fr;
 
     .navbar-brand {
-      font-size: 1.5rem;
-      text-align: center;
-      border-bottom: none;
+      display:none;
+      // font-size: 1.5rem;
+      // text-align: center;
+      // border-bottom: none;
       }
+    
+    .navbar-logo {
+      text-align: center;
+      border-radius: 50%;
+    }
 
       .nav-content {
         justify-self: center;
@@ -46,4 +52,17 @@
     width: 20rem !important;
   }
 }
+}
+@media (min-width: 750px) {
+  
+    #header {
+
+      &-home,
+      &-inner {
+      
+      .navbar-logo {
+        display:none;
+      }
+    }
+  }
 }

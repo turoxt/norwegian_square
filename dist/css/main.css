@@ -63,9 +63,10 @@
       display: grid;
       grid-template-columns: 1fr; }
       #header-home .container .navbar-brand, #header-inner .container .navbar-brand {
-        font-size: 1.5rem;
+        display: none; }
+      #header-home .container .navbar-logo, #header-inner .container .navbar-logo {
         text-align: center;
-        border-bottom: none; }
+        border-radius: 50%; }
       #header-home .container .nav-content, #header-inner .container .nav-content {
         justify-self: center; }
         #header-home .container .nav-content ul, #header-inner .container .nav-content ul {
@@ -74,6 +75,10 @@
           font-size: 13px; }
   #accordion .card {
     width: 20rem !important; } }
+
+@media (min-width: 750px) {
+  #header-home .navbar-logo, #header-inner .navbar-logo {
+    display: none; } }
 
 #header-home {
   background: url("../img/aurora.jpg") no-repeat center right/cover;
