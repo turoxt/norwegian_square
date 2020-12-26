@@ -81,11 +81,11 @@
     display: none; } }
 
 #header-home {
-  background: url("../img/aurora_worldvashemudomu.webp") no-repeat 20% 70%/cover;
+  background: url("../img/aurora.webp") no-repeat center right/cover;
   height: 100vh; }
 
 #header-inner {
-  background: url("../img/aurora_worldvashemudomu.webp") no-repeat 20% 10%/cover;
+  background: url("../img/aurora.webp") no-repeat 20% 10%/cover;
   height: 7.5rem;
   border-bottom: 3px solid red; }
 
