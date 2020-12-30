@@ -1,6 +1,7 @@
 $light-color: white;
 $main-color: red;
 $dark-color: #333;
+$wine-color: #d9534f;
 
 
 
@@ -56,7 +57,7 @@ $dark-color: #333;
   &-red {
     @extend %btn-shared;
     color: $light-color;
-    background-color:  #d9534f;
+    background-color: $wine-color;
     border-radius: 10px;
     width: 185px;
   }
@@ -84,3 +85,39 @@ $dark-color: #333;
   margin: 0 auto 0 auto;
 }
 
+// Navbar bottom - blogs
+
+.pagination > .active {
+  background-color: $dark-color;
+}
+
+.pagination > li > a
+{
+    background-color: white;
+    color: $dark-color;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: white;
+    background-color: $dark-color;
+    border-color: #ddd;
+    transition: 0.7s;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: $dark-color !important;
+    border: solid 1px $dark-color;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: $wine-color;
+    border: solid 1px $wine-color;
+    transition: 0.7s;
+}
