@@ -25,12 +25,13 @@
     src="https://www.facebook.com/tr?id=3729989567024202&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
-  <!-- TRACKING StartTrial -->
-  <script>
-    fbq('track', 'StartTrial');
-  </script>
+  
   <title>Webinar | Norwegian Square</title>
 </head>
+<!-- TRACKING CONTACT -->
+<script>
+  fbq('track', 'Contact');
+</script>
 <body data-target="#main-nav" id="home">
 
     <!-- Navbar -->
@@ -84,7 +85,7 @@
         </div>
       </div>
       <div class="container pt-3 text-center">
-        <a href="webinar-book.html" class="btn-darker" >Join Webinar</a>
+        <button href="webinar-book.html" onClick="fbq('track', 'Contact');" class="btn-darker" >Join Webinar</a>
       </div>
 
       <!-- Courses -->
@@ -106,7 +107,7 @@
               </p>
             </div>
           <div class="container pt-4">
-            <a href="webinar-book.html" class="btn-darker">Join Webinar</a>
+            <button href="webinar-book.html" onClick="fbq('track', 'Contact');" class="btn-darker">Join Webinar</a>
           </div>
       </section>
     </div>
