@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A webinar which gives you an insight about the group classes and methods used etc.">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
@@ -19,99 +18,66 @@
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '3729989567024202');
-    fbq('track', 'LandingPage');
+    fbq('track', 'SchedulePage');
   </script>
   <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=3729989567024202&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
-  
-  <title>Webinar | Norwegian Square</title>
+  <title>Norwegian Square</title>
 </head>
-<!-- TRACKING CONTACT -->
-<!-- <script>
-  fbq('track', 'Lead');
-</script> -->
 <body data-target="#main-nav" id="home">
 
     <!-- Navbar -->
   <header id="header-inner">
     <nav class="navbar navbar-expand py-2" id="main-nav">
       <div class="container div-1">
-        <a href="index.html" class="navbar-brand text-white">Norwegian Square</a>
-        <a href="index.html" style="text-align: center; border-bottom:none;" class="link-logo pb-2">
-        <img class="navbar-logo" src="./img/N_logo_2.png" width="50px">
-        </a>
-        <div class="nav-content">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link text-white">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="learn-norwegian/blogs.html" class="nav-link text-white">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a href="learn.html" class="nav-link text-white">Learn</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link text-white">Contact</a>
-            </li>
-          </ul>
+        <div class="container text-center">
+          <h1 class="text-white pt-3 text-center nav-trial">Norwegian Square</h1>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- Section A: Title -->
-  <section id="learn-a">
-    <div class="container text-center">
-      <h2 class="section-title pt-5">Webinar</h2>
+  <!-- Section A: Contact Form -->
+  <section id="contact-a" class="text-center">
+    <div class="container">
+      <h2 class="section-title pt-5">Join the Free Trial Lesson</h2>
       <div class="bottom-line"></div>
-      <p class="lead py-2">
-        How does this work?
-      </p>
+      <p class="lead py-1">Let's figure something out!</p>
+      <div class="container">
+      <form class="py-3" name="contact" method="POST" data-netlify="true">
+        <div class="container text-center">
+          <div class="container">
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/torleifv/trial-lesson" style="min-width:200px;height:430px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+            <!-- Calendly inline widget end -->         
+          </div>
+        </div>
+      </form>
     </div>
   </section>
 
-  <!-- Section B: Video -->
-  <section id="learn-b">
-    <div class="container text-center">
-        <div class="container col-md-5 text-center">
-          <img class="img-fluid pb-2" src="./img/webinar_jmexclusives.webp" width="200px">
-          <p>In this webinar you will learn about the group classes you can sign up for. The following are the requirements:</p>
-          <p> <i class="fa fa-crosshairs text-success"></i> Total Beginner <br>
-            <i class="fa fa-crosshairs text-success"></i> Know English <br>
-            <i class="fa fa-crosshairs text-success"></i> Excited!</p>
+  <!-- Section B: Contact Info -->
+
+  <section id="contact-b" class="text-center py-4">
+    <div class="container">
+      <div class="contact-info">
+        <div>
+          <i class="fa fa-envelope fa-2x"></i>
+          <h3>Email</h3>
+          <p>norwegiansquare@gmail.com</p>
         </div>
       </div>
-      <div class="container pt-3 text-center">
-        <a href="webinar-book.html" class="btn-darker button" >Join Webinar</a>
-      </div>
-
-      <!-- Courses -->
-      <section id="home-content" class="text-center py-5">
-        <div class="container">
-          <h2 class="section-title">The teacher</h2>
-          <div class="bottom-line"></div>
-          <p class="lead py-2">
-            About him
-          </p>
-          <div class="container">
-            <h3 class="py-3">Torleif</h3>
-            <img class="rounded-circle img-fluid" src="./img/torleif.jpg" width="100px">
-          </div>
-            <div class="container">
-              <p><i class="fa fa-book fa-2x text-success pt-4"></i> TEFL-certified <br>
-                <i class="fa fa-comments fa-2x text-primary"></i>1000+ classes <br>
-                <i class="fa fa-lightbulb-o fa-2x text-warning"></i>100+ Students
-              </p>
-            </div>
-          <div class="container pt-4">
-            <a href="webinar-book.html" class="btn-darker button">Join Webinar</a>
-          </div>
-      </section>
     </div>
   </section>
+
+  <!-- Tagline -->
+  <section id="contact-c" class="bg-danger text-white py-4 text-center">
+    <h1>Vi Snakkes!</h1>
+  </section>
+
   <!-- Cookies -->
   <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
   <div class="elfsight-app-fc3f168a-2a3e-4426-afb1-65a0f53bd349"></div> -->

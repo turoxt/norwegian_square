@@ -85,6 +85,8 @@
     background-position: 20% 10% !important; }
     #header-home .header-content, #header-inner .header-content {
       display: none; }
+    #header-home .nav-trial, #header-inner .nav-trial {
+      font-size: 2.3rem; }
     #header-home .container, #header-inner .container {
       display: grid;
       grid-template-columns: 1fr; }
