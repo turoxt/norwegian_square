@@ -162,7 +162,7 @@
 #accordion .modal-footer {
   margin: auto; }
 
-#contact-a button[type="submit"] {
+#contact-a button[type='submit'] {
   width: 50%;
   margin: auto; }
 
@@ -182,8 +182,8 @@
   height: 100%;
   max-height: 100px;
   overflow: hidden;
-  -webkit-transition: max-height .75s;
-  transition: max-height .75s; }
+  -webkit-transition: max-height 0.75s;
+  transition: max-height 0.75s; }
 
 .read-more {
   cursor: pointer;
