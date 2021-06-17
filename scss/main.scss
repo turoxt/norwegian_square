@@ -120,3 +120,47 @@ $bg-image: url('../img/aurora.webp');
 .hid {
   display: none;
 }
+
+// Reviews
+
+.container-review {
+  padding: 20px;
+  position: relative;
+}
+
+.student-img {
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.review {
+  padding: 15px;
+  color: gold;
+}
+
+.prevBtn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.nextBtn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .container-review {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
