@@ -157,6 +157,11 @@ $bg-image: url('../img/aurora.webp');
   cursor: pointer;
 }
 
+.nextBtn,
+.prevBtn {
+  pointer-events: none;
+}
+
 @media (min-width: 600px) {
   .container-review {
     width: 500px;
