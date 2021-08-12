@@ -3,17 +3,15 @@ $main-color: red;
 $dark-color: #333;
 $wine-color: #d9534f;
 
-
-
 // HOVER EFFECT
-  #header {
-    &-home,
-    &-inner {
+#header {
+  &-home,
+  &-inner {
     .div-1 a {
       text-transform: uppercase;
       border-bottom: 3px transparent solid;
       transition: border-color 0.7s;
-    
+
       &:hover {
         border-color: $light-color;
       }
@@ -91,33 +89,29 @@ $wine-color: #d9534f;
   background-color: $dark-color;
 }
 
-.pagination > li > a
-{
-    background-color: white;
-    color: $dark-color;
+.pagination > li > a {
+  background-color: white;
+  color: $dark-color;
 }
 
 .pagination > li > a:focus,
 .pagination > li > a:hover,
 .pagination > li > span:focus,
-.pagination > li > span:hover
-{
-    color: white;
-    background-color: $dark-color;
-    border-color: #ddd;
-    transition: 0.7s;
+.pagination > li > span:hover {
+  color: white;
+  background-color: $dark-color;
+  border-color: #ddd;
+  transition: 0.7s;
 }
 
-.pagination > .active > a
-{
-    color: white;
-    background-color: $dark-color !important;
-    border: solid 1px $dark-color;
+.pagination > .active > a {
+  color: white;
+  background-color: $dark-color !important;
+  border: solid 1px $dark-color;
 }
 
-.pagination > .active > a:hover
-{
-    background-color: $wine-color;
-    border: solid 1px $wine-color;
-    transition: 0.7s;
+.pagination > .active > a:hover {
+  background-color: $wine-color;
+  border: solid 1px $wine-color;
+  transition: 0.7s;
 }
