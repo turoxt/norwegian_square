@@ -1,24 +1,15 @@
 {
-  "name": "website_draft_7_sass_hostel",
+  "name": "2norwegian_square",
   "version": "1.0.0",
-  "description": "hostel website",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "lodash": ">=4.17.19",
-    "node-sass": "^4.14.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/turoxt/norwegian_square.git"
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
   },
   "keywords": [],
-  "bugs": {
-    "url": "https://github.com/turoxt/norwegian_square/issues"
-  },
-  "homepage": "https://github.com/turoxt/norwegian_square#readme"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
 }

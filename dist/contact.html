@@ -1,103 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="For people who are determined to learn Norwegian and taking the next step to master the language, then it is perfect timing to sign up to the online classes. We can start with either group classes - starting from $15 or single classes! Vi ses folkens ">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="icon" type="image/png" href="./img/logo_N.png"/>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="/dist/css/main.css">
   <title>Contact | Norwegian Square</title>
+  <link rel="icon" type="image/png" href="/dist/img/logo.png" />
 </head>
-<body data-target="#main-nav" id="home">
 
-    <!-- Navbar -->
-  <header id="header-inner">
-    <nav class="navbar navbar-expand py-2" id="main-nav">
-      <div class="container div-1">
-        <a href="index.html" class="navbar-brand text-white">Norwegian Square</a>
-        <a href="index.html" style="text-align: center; border-bottom:none;" class="link-logo pb-2">
-          <img class="navbar-logo" src="./img/N_logo_2.png" width="50px">
-          </a>
-        <div class="nav-content">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link text-white">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="all-classes.html" class="nav-link text-white">BOOK lesson</a>
-            </li>
-            <li class="nav-item">
-              <a href="learn.html" class="nav-link text-white">Learn</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link text-white current">Contact</a>
-            </li>
-          </ul>
-        </div>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <ul>
+      <a href="index.html"><img src="/dist/img/logo.png" class="logo" alt="Norwegian Square"></a>
+      <li><a class="active" href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="book-a-lesson.html">Book a Lesson!</a></li>
+      <div class="hamburger">
+        <i id="hamburger" class="fas fa-bars"></i>
       </div>
-    </nav>
-  </header>
-
-  <!-- Section B: Contact Info -->
-
-  <section id="contact-b" class="text-center py-5">
-    <div class="container py-2">
-      <div class="contact-info">
-        <div>
-          <i class="fa fa-envelope fa-2x"></i>
-          <h3>Email</h3>
-          <p>norwegiansquare@gmail.com</p>
-        </div>
-      </div>
+    </ul>
+  </div>
+  <div class="hamburger-menu">
+    <ul class="navbar2">
+      <li><a class="active" href="contact.html" class="hamburger-item">Contact</a></li>
+      <li><a href="about.html" class="hamburger-item">About</a></li>
+      <li><a href="book-a-lesson.html" class="hamburger-item">Book a Lesson!</a></li>
+    </ul>
+  </div>
+  
+  <div class="header-contact">
+    <div class="showcase-contact">
+      <div class="image-contact"></div>
     </div>
-  </section>
-
-  <!-- Tagline -->
-  <section id="contact-c" class="bg-danger text-white py-4 text-center">
-    <h1>Vi Snakkes!</h1>
-  </section>
-
-  <!-- Cookies -->
-  <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-  <div class="elfsight-app-fc3f168a-2a3e-4426-afb1-65a0f53bd349"></div> -->
-  <!-- Messenger -->
-  <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-  <div class="elfsight-app-4cf6c440-e0d6-4ba4-b34a-0357f3f05878"></div> -->
+    <div class="text-contact">
+      <h1>Contact</h1>
+      <div class="bottom-line"></div>
+      
+      <p>It's always possible to reach Torleif through the email.</p>
+      <h2>norwegiansquare@gmail.com</h2>
+    </div>
+  </div>
 
   <!-- Footer -->
-  <footer id="main-footer" class="bg-dark text-white text-center">
-    <div class="footer-content container">
-      <p>Copyright &copy; <span id="year"></span>, All Rights Reserved</p>
-      <div class="d-flex justify-content-center">
-        <div class="p-1">
-          <a href="https://www.facebook.com/norwegiansquare/" target="_blank">
-          <i class="fa fa-facebook fa-2x"></i>
-          </a>
-        </div>
-        <div class="p-1">
-          <a href="https://www.youtube.com/channel/UC3-oAgD_Tl_t8cNpv6r2E8w" target="_blank">
-            <i class="fa fa-youtube fa-2x text-danger"></i>
-            </a>
-        </div>
-      </div>
+  <div class="footer">
+    <div class="copy">
+      <p>Copyright &copy;<script>document.write(new Date().getFullYear())</script>, All Rights Reserved</p>
     </div>
-  </footer>
+    <div class="social-media">
+      <a href="https://www.facebook.com/norwegiansquare" target="blank"><i class="fab fa-facebook fa-2x yt"></i></a>
+      <a href="https://www.youtube.com/channel/UC3-oAgD_Tl_t8cNpv6r2E8w" target="blank"><i class="fab fa-youtube fa-2x fb"></i></a>
+      <a href="https://www.instagram.com/norwegian_square/" target="blank"><i class="fab fa-instagram fa-2x ig"></i></a>
+    </div>
+    <div class="legal-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-conditions.html">Terms and conditions</a>
+    </div>
+  </div>
 
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<!-- JS SCRIPTS -->
-
-<script>
-  // Get the current year for the copyright
-  $('#year').text(new Date().getFullYear());
-</script>
-
+  <script src="/dist/js/app.js"></script>
 </body>
+
 </html>

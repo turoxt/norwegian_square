@@ -1,5 +1,0 @@
-Sitemap: https://www.norwegiansquare.com/sitemap.xml
-User-agent: *
-Disallow: /css/
-Disallow: /img/
-Disallow: /js/

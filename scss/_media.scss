@@ -1,124 +1,270 @@
-@media (max-width: 750px) {
+// Flip cards
 
-  // HEADER
-  #header {
+// Min-width 300px and max-width 400px
+@media (min-width: 300px) and (max-width: 400px) {
+  body {
+    background-color: $light-color !important;
+  }
 
-  &-home,
-  &-inner {
-
-    border-bottom: 3px solid $main-color;
-    height: 7.5rem !important;
-    background-position: 20% 10% !important;
-
-    .header-content {
-      display: none;
-    }
-
-    .nav-trial {
-      font-size: 2.3rem;
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: 1fr;
-
-    .navbar-brand {
-      display:none;
-      // font-size: 1.5rem;
-      // text-align: center;
-      // border-bottom: none;
+  .video-container {
+    .video {
+      iframe {
+        width: 70%;
+        height: 130px !important;
       }
-    
-    .navbar-logo {
-      text-align: center;
-      border-radius: 50%;
     }
+  }
 
-      .nav-content {
-        justify-self: center;
+  .text-torleif {
+    padding-top: 0% !important;
+  }
 
-        ul {
-          background: $dark-color;
-          opacity: 0.9;
-          font-size: 13px;
+  .reviews {
+    .flip-card {
+      width: 70px !important;
+      height: 70px !important;
+      .flip-card-front {
+        height: 70px !important;
+        img {
+          width: 70px !important;
+          height: 70px !important;
         }
-      }  
+      }
+
+      .flip-card-back {
+        width: 70px !important;
+        cursor: unset;
+        p {
+          text-align: left;
+          font-size: 5px !important;
+          padding: 3px;
+        }
+      }
     }
   }
-}
 
-// Dictionary
+  .columns {
+    .flip-card {
+      width: 105px !important;
+      height: 105px !important;
+      .flip-card-front {
+        height: 105px !important;
+        img {
+          width: 105px !important;
+          height: 105px !important;
+        }
+      }
 
-// Accordion
+      .flip-card-back {
+        width: 105px !important;
+        cursor: unset;
+        p {
+          text-align: left;
+          font-size: 5px !important;
+          padding: 3px;
+        }
+      }
+    }
+  }
 
-#accordion {
-  .card {
-    width: 20rem !important;
+  .image-home {
+    height: 11rem !important;
+  }
+
+  // About
+  .secnd-pg {
+    display: none;
   }
 }
-}
-@media (min-width: 750px) {
-  
-    #header {
 
-      &-home,
-      &-inner {
-      
-      .navbar-logo {
-        display:none;
+@media (min-width: 400px) and (max-width: 500px) {
+  body {
+    background-color: $light-color !important;
+  }
+
+  .text-torleif {
+    padding-top: 5% !important;
+  }
+
+  .video-container {
+    .video {
+      iframe {
+        width: 70%;
+        height: 50% !important;
+      }
+    }
+  }
+
+  .reviews {
+    .flip-card {
+      width: 110px !important;
+      height: 110px !important;
+      .flip-card-front {
+        height: 110px !important;
+        img {
+          width: 110px !important;
+          height: 110px !important;
+        }
+      }
+
+      .flip-card-back {
+        width: 110px !important;
+        cursor: unset;
+        p {
+          text-align: left;
+          font-size: 8px !important;
+          padding: 3px;
+        }
       }
     }
   }
 }
 
-// Blogs
+@media (min-width: 500px) and (max-width: 700px) {
+  body {
+    background-color: $light-color !important;
+  }
 
-@media (max-width: 990px) {
-  .caption-1 {
-    width: 230px;
-    height: 129px;
+  .video-container {
+    .video {
+      iframe {
+        width: 70%;
+        height: 220px !important;
+      }
+    }
+  }
+
+  .reviews {
+    .flip-card {
+      width: 130px !important;
+      height: 130px !important;
+      .flip-card-front {
+        height: 130px !important;
+        img {
+          width: 130px !important;
+          height: 130px !important;
+        }
+      }
+
+      .flip-card-back {
+        width: 130px !important;
+        cursor: unset;
+        p {
+          text-align: left;
+          font-size: 10px !important;
+          padding: 3px;
+        }
+      }
+    }
   }
 }
 
-// Video
-#video-case {
-  iframe {
-    width: 563px;
-    height: 317px;
+// Navbar
+@media (min-width: 300px) and (max-width: 500px) {
+  // Navbar
+  .navbar {
+    ul {
+      li {
+        display: none;
+      }
+      .hamburger {
+        display: block !important;
+        float: right;
+        cursor: pointer;
+        margin-right: 30px;
+        margin-top: 7px;
+        font-size: 30px;
+      }
+    }
   }
 }
 
+// Min-width 300px and max-width 600px
+@media (min-width: 300px) and (max-width: 600px) {
+  .header-about {
+    flex-direction: column;
 
-// IPAD
-
-@media (min-width: 450px) and (max-width: 750px) {
-// Video
-#video-case {
-  iframe {
-    width: 400px;
-    height: 225px;
+    .img-div {
+      text-align: center;
+    }
   }
 }
-}
 
-// IPHONE X, 6/7/8
-@media (min-width: 320px) and (max-width: 450px) {
-// Video
-#video-case {
-  iframe {
-    width: 300px;
-    height: 169px;
+// Min-width 600px
+@media (min-width: 600px) {
+  .header-about {
+    .details {
+      display: inline-block !important;
+    }
+
+    .first {
+      font-weight: bold;
+    }
+
+    i {
+      color: $main-color;
+    }
+  }
+
+  // Book a lesson
+  .headline {
+    p {
+      max-width: 600px;
+      margin: auto;
+    }
   }
 }
+
+// Min-width 650px
+@media (min-width: 650px) {
+  body {
+    background-color: $main-color;
+  }
+
+  .text-a {
+    width: 650px;
+    margin: auto !important;
+    padding-bottom: 20px;
+    background-color: $light-color !important;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .navbar {
+    width: 100%;
+    margin: 0;
+  }
+
+  .image-home {
+    background: $image-home no-repeat 20% 10% / cover !important;
+    height: 90vh !important;
+  }
 }
 
-// Iphone 5
-@media (max-width: 320px) {
-// Video
-#video-case {
-  iframe {
-    width: 220px;
-    height: 124px;
+// Small bug
+@media (min-width: 650px) and (max-width: 700px) {
+  .image-home,
+  .navbar {
+    width: 700px !important;
   }
- }
+}
+
+// Padding sides
+@media (min-width: 912px) {
+  .body-home {
+    background-color: $main-color !important;
+  }
+
+  .text-a {
+    background-color: $light-color !important;
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+}
+
+// Buttons reviews
+@media (max-width: 650px) {
+  .btn-box {
+    display: flex !important;
+  }
 }

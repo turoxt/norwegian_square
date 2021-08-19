@@ -1,81 +1,43 @@
-$light-color: white;
-$main-color: red;
-$dark-color: #333;
-$wine-color: #d9534f;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
-// HOVER EFFECT
-#header {
-  &-home,
-  &-inner {
-    .div-1 a {
-      text-transform: uppercase;
-      border-bottom: 3px transparent solid;
-      transition: border-color 0.7s;
+$main-color: #dc3545;
+$light-color: #f8f8ff;
+$dark-color: #242526;
+$main-text: 'PT Sans', sans-serif;
+$image-home: url('/dist/img/torleif-showcase.png');
+$image-about: url('/dist/img/tromsø_Michelleraponi.jpg');
+$image-contact: url('/dist/img/contact-showcase.png');
 
-      &:hover {
-        border-color: $light-color;
-      }
-
-      &.current {
-        border-color: $light-color;
-      }
-    }
-    .navbar-brand {
-      font-size: 3rem;
-    }
-  }
+// Logo
+.logo {
+  width: 50px;
 }
 
-// BUTTONS
-%btn-shared {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  transition: all 0.7s;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
+// For all pages
+
+h1 {
+  text-align: center;
+  padding-bottom: 5px;
 }
 
-.btn {
-  &-main {
-    @extend %btn-shared;
-    color: $dark-color;
-    background-color: $light-color;
-    opacity: 0.9;
-    border-radius: 10px;
-  }
-
-  &-darker {
-    @extend %btn-shared;
-    color: $light-color !important;
-    background-color: $dark-color;
-    border-radius: 10px;
-  }
-
-  &-red {
-    @extend %btn-shared;
-    color: $light-color;
-    background-color: $wine-color;
-    border-radius: 10px;
-    width: 185px;
-  }
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.btn {
-  &-main:hover {
-    background-color: $dark-color;
-    color: $light-color;
-    text-decoration: none;
-  }
-
-  &-darker:hover {
-    background-color: $light-color;
-    color: $dark-color !important;
-    text-decoration: none;
-  }
+h2 {
+  padding-bottom: 5px;
 }
 
 .bottom-line {
+  height: 3px;
+  width: 4rem;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+.bottom-line-small {
   height: 2px;
   width: 3rem;
   background: $main-color;
@@ -83,35 +45,120 @@ $wine-color: #d9534f;
   margin: 0 auto 0 auto;
 }
 
-// Navbar bottom - blogs
+// FLIP CARDS
 
-.pagination > .active {
+.flip-card {
+  background-color: transparent;
+  width: 160px;
+  height: 140px;
+  perspective: 1000px;
+  margin: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  left: 0%;
+}
+
+.flip-card-front {
+  background-color: $main-color;
+  justify-content: center;
+  color: $light-color;
+  cursor: pointer;
+
+  i {
+    padding-top: 20%;
+  }
+}
+
+.flip-card-back {
   background-color: $dark-color;
-}
-
-.pagination > li > a {
-  background-color: white;
-  color: $dark-color;
-}
-
-.pagination > li > a:focus,
-.pagination > li > a:hover,
-.pagination > li > span:focus,
-.pagination > li > span:hover {
   color: white;
-  background-color: $dark-color;
-  border-color: #ddd;
-  transition: 0.7s;
+  transform: rotateY(180deg);
+  cursor: pointer;
+
+  h2 {
+    padding-top: 33%;
+  }
 }
 
-.pagination > .active > a {
-  color: white;
-  background-color: $dark-color !important;
-  border: solid 1px $dark-color;
+// Buttons
+
+// Big button
+.btn-big {
+  margin: auto;
+  text-align: center;
+  border: none;
+  background: $main-color;
+  color: $light-color;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s ease;
+
+  a {
+    text-decoration: none;
+    color: $light-color;
+  }
 }
 
-.pagination > .active > a:hover {
-  background-color: $wine-color;
-  border: solid 1px $wine-color;
-  transition: 0.7s;
+.btn-big:hover {
+  background: $dark-color;
+}
+
+// Small button
+
+.btn-box {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.btn-small {
+  margin: auto;
+  text-align: center;
+  border: none;
+  background: $main-color;
+  color: $light-color;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.btn-small:hover {
+  background: $dark-color;
+}
+
+// Scroll down Docs + PPT
+.img-container {
+  overflow: hidden;
+  .left-scroll {
+    transform: translateX(-100%);
+  }
+
+  .right-scroll {
+    transform: translateX(100%);
+  }
 }

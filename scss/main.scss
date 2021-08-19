@@ -1,166 +1,416 @@
 @import 'utilities';
 @import 'media';
 
-// VARIABLES
-$website-width: 1100px;
-$light-color: white;
-$main-color: red;
-$dark-color: #333;
-$bg-image: url('../img/aurora.webp');
-
-// HEADER
-#header {
-  // Header Home
-  &-home {
-    background: $bg-image no-repeat center right / cover;
-    height: 100vh;
-  }
-  // Header Inner
-  // Header Inner
-  &-inner {
-    background: $bg-image no-repeat 20% 10% / cover;
-    height: 7.5rem;
-    border-bottom: 3px solid $main-color;
-  }
+* {
+  margin: 0;
 }
 
-#showcase {
-  .container {
-    padding-top: 8rem;
-  }
-
-  h3 {
-    font-size: 70px;
-    padding-bottom: 2rem;
-  }
+body {
+  font-family: $main-text;
 }
 
-// Reviews
+// Navbar
+.navbar {
+  background-color: $light-color;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+  ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    li {
+      float: right;
+      list-style: none;
+      margin: 10px;
+      margin-top: 15px;
+      a {
+        text-decoration: none;
+        color: $dark-color;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        border-left: 3px transparent solid;
+        padding-left: 3px;
+        transition: 0.3s ease;
+      }
+      .active {
+        border-color: $dark-color;
+      }
+    }
 
-#reviews {
-  &-content {
-    .avatar {
-      border-radius: 90%;
+    .hamburger {
+      display: none;
+    }
+    a:hover {
+      border-color: $dark-color;
     }
   }
 }
 
-// Dictionary
+// Hamburger menu
+.hamburger-menu {
+  position: absolute;
+  background: $light-color;
+  text-align: center;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1;
+  width: 100%;
 
-// Accordion
+  .navbar2 {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    padding: 5px;
+    li {
+      display: list-item;
+      padding: 5px;
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
 
-#accordion {
-  .card {
-    margin: 0 auto;
+      a {
+        text-decoration: none;
+        color: $dark-color;
+        border-left: 3px transparent solid;
+        padding-left: 3px;
+        transition: 0.3s ease;
+      }
+
+      a:hover {
+        border-color: $dark-color;
+      }
+    }
+  }
+}
+
+.hamburger-menu.show {
+  transform: translateY(0%);
+  transition: transform 0.3s ease;
+}
+
+// HOME
+
+// Showcase-home
+.showcase {
+  &-home,
+  &-about,
+  &-contact {
+    .image {
+      &-home,
+      &-about,
+      &-contact {
+        height: 17rem;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      &-home {
+        background: $image-home no-repeat center right / cover;
+      }
+      &-about {
+        background: $image-about no-repeat center right / cover;
+      }
+      &-contact {
+        background: $image-contact no-repeat center right / cover;
+      }
+    }
+  }
+}
+
+// Text-a
+.text-a {
+  margin: 1.1rem;
+  background-color: $light-color;
+
+  h1 {
+    padding-top: 10px;
+  }
+  h2 {
     text-align: center;
-    margin-bottom: 10px;
   }
 
-  .modal-title {
-    margin: auto;
+  p {
+    padding-top: 20px;
   }
 
-  .modal-footer {
-    margin: auto;
+  .img-container {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    div {
+      text-align: center;
+    }
+    img {
+      width: 60%;
+    }
+
+    .box {
+      overflow: hidden;
+      transform: translateX(100%);
+    }
+
+    .box.active {
+      transform: translateX(0%);
+      transition: 1s ease-out;
+    }
+    .scroll-left {
+      transform: translateX(-100%);
+      overflow: hidden;
+    }
+  }
+
+  .torleif-container {
+    display: flex;
+    padding-top: 10px;
+
+    .img-torleif {
+      width: 100%;
+      height: 100%;
+      display: table;
+      text-align: center;
+      img {
+        float: center;
+        width: 50%;
+        border-radius: 10px;
+      }
+    }
+
+    .text-torleif {
+      width: 100%;
+      height: 100%;
+      display: table;
+      text-align: left;
+      padding-top: 8%;
+
+      i {
+        color: green;
+      }
+    }
+
+    .box {
+      overflow: hidden;
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    .box.active {
+      transform: translateX(0%);
+      overflow: hidden;
+      transition: 1s ease-out;
+      opacity: 1;
+    }
+    .scroll-left {
+      transform: translateX(-100%);
+      overflow: hidden;
+      opacity: 0;
+    }
+  }
+
+  .video-container {
+    .video {
+      padding-top: 10px;
+      text-align: center;
+
+      iframe {
+        border-radius: 10px;
+        border: none;
+        width: 70%;
+        height: 230px;
+      }
+    }
+  }
+
+  // Reviews
+
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    .row {
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+      .flip-card {
+        width: 180px;
+        height: 180px;
+        padding-bottom: 10px;
+
+        .flip-card-front {
+          background-color: $dark-color !important;
+          height: 180px;
+          cursor: unset;
+          img {
+            height: 180px;
+            border-radius: 5px;
+          }
+        }
+
+        .flip-card-back {
+          width: 180px;
+          cursor: unset;
+          p {
+            text-align: left;
+            font-size: 14px;
+            padding: 3px;
+          }
+        }
+
+        .btn-box {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// BOOK A LESSON
+
+.header-a {
+  margin: 1.1rem;
+
+  p {
+    text-align: center;
+  }
+}
+
+.columns {
+  display: flex;
+  text-align: center;
+  padding-top: 10px;
+  justify-content: center;
+
+  .bottom-line-small {
+    margin-bottom: 20px !important;
+  }
+
+  .column-a,
+  .column-b {
+    margin: 20px;
+  }
+}
+
+// Privacy, terms
+.container-privacy,
+.container-terms {
+  margin: 10px;
+
+  h2 {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+// About
+
+body {
+  background-color: $light-color;
+}
+
+.showcase-about {
+  img {
+    width: 100%;
+  }
+}
+
+.header-about {
+  display: flex;
+  padding: 20px;
+  max-width: 750px;
+  justify-content: center;
+
+  .img-div {
+    padding-top: 10px;
+    img {
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    .details {
+      display: none;
+    }
+  }
+
+  .text-div {
+    padding-left: 10px;
   }
 }
 
 // Contact
-
-#contact {
-  &-a {
-    button[type='submit'] {
-      width: 50%;
-      margin: auto;
+.header-contact {
+  .showcase-contact {
+    img {
+      width: 100%;
     }
-    .form1 {
+  }
+
+  .text-contact {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h1 {
+      padding-top: 10px;
+    }
+
+    p {
       text-align: center;
-      width: 185px;
-      display: inline-block;
+      padding-top: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      padding-bottom: 20px;
     }
   }
 }
 
 // Footer
-
-#main-footer {
-  padding-bottom: 28px;
-  padding-top: 28px;
-}
-
-// READ MORE
-
-/*
-  NECESSARY SECTION
-*/
-.only-so-big {
-  height: 100%;
-  max-height: 100px;
-  overflow: hidden;
-  -webkit-transition: max-height 0.75s;
-  transition: max-height 0.75s;
-}
-
-.read-more {
-  @extend %btn-shared;
-  cursor: pointer;
-  font-size: 1em;
-  outline: none;
-  padding: 10px;
-}
-.read-more:hover {
-  text-decoration: underline;
-}
-.read-more:focus {
-  outline: none;
-}
-.read-more::-moz-focus-inner {
-  border: 0;
-}
-.hid {
-  display: none;
-}
-
-// Reviews
-
-.container-review {
+.footer {
+  background-color: $dark-color;
+  color: $light-color;
   padding: 20px;
-  position: relative;
-}
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+  align-items: center;
 
-.student-img {
-  width: 100px;
-  border-radius: 50%;
-  text-align: center;
-}
+  .social-media {
+    padding-top: 10px;
 
-.review {
-  padding: 15px;
-  color: gold;
-}
+    a {
+      margin: 3px;
+      text-decoration: none;
+      .yt {
+        width: 30px;
+        color: $light-color;
+        border-radius: 20%;
+      }
 
-.prevBtn {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-50%, -50%);
-  font-size: 2.5rem;
-  cursor: pointer;
-}
+      .fb {
+        width: 30px;
+        color: $light-color;
+        border-radius: 20%;
+      }
 
-.nextBtn {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(50%, -50%);
-  font-size: 2.5rem;
-  cursor: pointer;
-}
+      .ig {
+        width: 30px;
+        color: $light-color;
+        border-radius: 20%;
+        margin-left: 4px;
+      }
+    }
+  }
 
-@media (min-width: 600px) {
-  .container-review {
-    width: 500px;
-    margin-right: auto;
-    margin-left: auto;
+  .legal-links {
+    padding: 10px;
+
+    a {
+      font-size: 12px;
+      margin: 5px;
+      color: #fff;
+    }
   }
 }
