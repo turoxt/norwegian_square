@@ -1,3 +1,4 @@
+// Hamburger menu
 const burgerBtn = document.getElementById('hamburger')
 const burgerMenu = document.querySelector('.hamburger-menu')
 
@@ -33,4 +34,13 @@ const handleScrollAnimation = () => {
 
 window.addEventListener('scroll', () => {
   handleScrollAnimation();
+})
+
+// More reviews
+const btnReviews = document.querySelector('.btn-reviews')
+const rowSecond = document.querySelector('.row.second')
+
+btnReviews.addEventListener('click', () => {
+  btnReviews.classList.add('remove')
+  rowSecond.classList.add('active')
 })

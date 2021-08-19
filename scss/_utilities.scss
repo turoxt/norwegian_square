@@ -147,8 +147,25 @@ h2 {
   transition: 0.4s ease;
 }
 
+.btn-small-dark {
+  margin: auto;
+  text-align: center;
+  border: none;
+  background: $dark-color;
+  color: $light-color;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
 .btn-small:hover {
   background: $dark-color;
+}
+
+.btn-small-dark:hover {
+  background: $main-color;
 }
 
 // Scroll down Docs + PPT

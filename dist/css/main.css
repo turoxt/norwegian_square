@@ -108,8 +108,23 @@ h2 {
   cursor: pointer;
   transition: 0.4s ease; }
 
+.btn-small-dark {
+  margin: auto;
+  text-align: center;
+  border: none;
+  background: #242526;
+  color: #f8f8ff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.4s ease; }
+
 .btn-small:hover {
   background: #242526; }
+
+.btn-small-dark:hover {
+  background: #dc3545; }
 
 .img-container {
   overflow: hidden; }
@@ -217,7 +232,9 @@ h2 {
         .reviews .row .flip-card .flip-card-back p {
           text-align: left;
           font-size: 11px !important;
-          padding: 3px; } }
+          padding: 3px; }
+  .btn-reviews {
+    padding-top: 30px; } }
 
 @media (min-width: 300px) and (max-width: 500px) {
   .navbar ul li {
@@ -236,7 +253,9 @@ h2 {
   .header-about {
     flex-direction: column; }
     .header-about .img-div {
-      text-align: center; } }
+      text-align: center; }
+  .btn-reviews {
+    padding-top: 30px; } }
 
 @media (min-width: 600px) {
   .header-about .details {
@@ -457,6 +476,18 @@ body {
             padding: 3px; }
         .text-a .reviews .row .flip-card .btn-box {
           display: none; }
+    .text-a .reviews .btn-reviews {
+      align-self: center !important;
+      padding-bottom: 10px;
+      opacity: 1;
+      transition: 0.4s ease; }
+    .text-a .reviews .btn-reviews.remove {
+      display: none;
+      opacity: 0; }
+    .text-a .reviews .row.second {
+      display: none; }
+    .text-a .reviews .second.active {
+      display: flex; }
 
 .header-a {
   margin: 1.1rem; }
