@@ -231,6 +231,8 @@ h2 {
     font-size: 30px; } }
 
 @media (min-width: 300px) and (max-width: 600px) {
+  .text-a {
+    overflow-x: hidden !important; }
   .header-about {
     flex-direction: column; }
     .header-about .img-div {
