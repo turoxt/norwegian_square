@@ -446,10 +446,10 @@ body {
     padding-top: 10px;
     text-align: center; }
     .text-a .video-container .video iframe {
-      border-radius: 10px;
       border: none;
       width: 70%;
-      height: 230px; }
+      height: 230px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); }
   .text-a .reviews {
     display: flex;
     flex-direction: column; }
@@ -485,9 +485,12 @@ body {
       display: none;
       opacity: 0; }
     .text-a .reviews .row.second {
-      display: none; }
+      display: none;
+      opacity: 0;
+      transition: all 1s; }
     .text-a .reviews .second.active {
-      display: flex; }
+      display: flex;
+      opacity: 1; }
 
 .header-a {
   margin: 1.1rem; }
@@ -568,17 +571,21 @@ body {
       text-decoration: none; }
       .footer .social-media a .yt {
         width: 30px;
-        color: #f8f8ff;
+        color: #dc3545;
         border-radius: 20%; }
       .footer .social-media a .fb {
         width: 30px;
-        color: #f8f8ff;
+        color: #00a2ff;
         border-radius: 20%; }
       .footer .social-media a .ig {
         width: 30px;
-        color: #f8f8ff;
         border-radius: 20%;
-        margin-left: 4px; }
+        margin-left: 4px;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+        -webkit-background-clip: text;
+        /* Also define standard property for compatibility */
+        background-clip: text;
+        -webkit-text-fill-color: transparent; }
   .footer .legal-links {
     padding: 10px; }
     .footer .legal-links a {

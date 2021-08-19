@@ -212,10 +212,10 @@ body {
       text-align: center;
 
       iframe {
-        border-radius: 10px;
         border: none;
         width: 70%;
         height: 230px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
       }
     }
   }
@@ -271,9 +271,12 @@ body {
 
     .row.second {
       display: none;
+      opacity: 0;
+      transition: all 1s;
     }
     .second.active {
       display: flex;
+      opacity: 1;
     }
   }
 }
@@ -401,21 +404,32 @@ body {
       text-decoration: none;
       .yt {
         width: 30px;
-        color: $light-color;
+        color: $main-color;
         border-radius: 20%;
       }
 
       .fb {
         width: 30px;
-        color: $light-color;
+        color: rgb(0, 162, 255);
         border-radius: 20%;
       }
 
       .ig {
         width: 30px;
-        color: $light-color;
         border-radius: 20%;
         margin-left: 4px;
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+        -webkit-background-clip: text;
+        /* Also define standard property for compatibility */
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
   }
