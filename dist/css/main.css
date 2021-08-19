@@ -249,7 +249,7 @@ h2 {
     width: 100%;
     margin: 0; }
   .image-home {
-    background: url("./img/torleif-showcase.png") no-repeat 20% 10%/cover !important;
+    background: url("../img/torleif-showcase.png") no-repeat 20% 10%/cover !important;
     height: 90vh !important; } }
 
 @media (min-width: 650px) and (max-width: 700px) {
@@ -342,13 +342,13 @@ body {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); }
 
 .showcase-home .image-home, .showcase-about .image-home, .showcase-contact .image-home {
-  background: url("./img/torleif-showcase.png") no-repeat center right/cover; }
+  background: url("../img/torleif-showcase.png") no-repeat center right/cover; }
 
 .showcase-home .image-about, .showcase-about .image-about, .showcase-contact .image-about {
-  background: url("./img/tromsø_Michelleraponi.jpg") no-repeat center right/cover; }
+  background: url("../img/tromsø_Michelleraponi.jpg") no-repeat center right/cover; }
 
 .showcase-home .image-contact, .showcase-about .image-contact, .showcase-contact .image-contact {
-  background: url("./img/contact-showcase.png") no-repeat center right/cover; }
+  background: url("../img/contact-showcase.png") no-repeat center right/cover; }
 
 .text-a {
   margin: 1.1rem;
