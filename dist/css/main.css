@@ -75,7 +75,8 @@ h2 {
 .btn-tag {
   text-decoration: none;
   color: #f8f8ff;
-  text-align: center; }
+  text-align: center;
+  margin: auto; }
 
 .btn-big {
   margin: auto;
