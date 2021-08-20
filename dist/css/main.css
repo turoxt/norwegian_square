@@ -282,7 +282,7 @@ h2 {
     width: 100%;
     margin: 0; }
   .image-home {
-    background: url("../img/torleif-showcase.png") no-repeat 20% 10%/cover !important;
+    background: url("https://lh3.googleusercontent.com/WA8joPNj8NJry91BYLVELcU_QtnhYuuQU_-hdA4LBgRDGA-w6PZN2O_XMHpjZaLXpPzliVWCiRhvuBei7rnraj-dkLh3-_N-bkWaXZwGzoG1RUczmE0sW39EOLMDhczHxNzBFyI4aqTMjUuiePSjbvWb6zAlrGv_PheR_ip1lyVh1JpRkG0OIrcDt4fB6SZzK5_DAFyQdafJKBMx8zhuVxXVUNhsy2p0W7nPG49Toa39sPX7sHbZerck4Xu7pEMcCbWFU_-xvt-02ep5ZCKvxQZ7Ki5KFjpNlcEg2JxQLS-M1CXVNxzm3O4uBv4WGiKKqANYVjMP8FAci1q7rDdj0qzYLGc98sMSYbusWyQX6OpyGlcenvq0f9ZJlxMrSzCXAiOkLESYMzBluohtuv1TC0iOQFX7WfoozSefwIJ5426K4uUJ7jisUdDZI0rs_AagQlsAjx45gZJSNlmw4OjNYfnD_fpt9WfBj4dijHS3HYvSWNf77aCag9IpaphxkkZQ6PojeR9_XM6UGAOWXLq-vG41IgpfUQOp6mXZpc38m6oUGd4Bgw4KKrtDHA_wJadzn0NeHon-WcBuecW0RC_-L81Qap5hmQZsWrVdCD7lksQ9tstIcWeeMBg9iEmjzIeMZlr7oVezHm2XO21B9l7cjo8YOhS0gzJvBfVxLD46dHNgYH9gKEK70NcuUCdG5JM0SV6uZhN7vshfPGtlk_ODB7cf=w1539-h866-no?authuser=0") no-repeat 20% 10%/cover !important;
     height: 90vh !important; } }
 
 @media (min-width: 650px) and (max-width: 700px) {
@@ -375,7 +375,7 @@ body {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); }
 
 .showcase-home .image-home, .showcase-about .image-home, .showcase-contact .image-home {
-  background: url("../img/torleif-showcase.png") no-repeat center right/cover; }
+  background: url("https://lh3.googleusercontent.com/WA8joPNj8NJry91BYLVELcU_QtnhYuuQU_-hdA4LBgRDGA-w6PZN2O_XMHpjZaLXpPzliVWCiRhvuBei7rnraj-dkLh3-_N-bkWaXZwGzoG1RUczmE0sW39EOLMDhczHxNzBFyI4aqTMjUuiePSjbvWb6zAlrGv_PheR_ip1lyVh1JpRkG0OIrcDt4fB6SZzK5_DAFyQdafJKBMx8zhuVxXVUNhsy2p0W7nPG49Toa39sPX7sHbZerck4Xu7pEMcCbWFU_-xvt-02ep5ZCKvxQZ7Ki5KFjpNlcEg2JxQLS-M1CXVNxzm3O4uBv4WGiKKqANYVjMP8FAci1q7rDdj0qzYLGc98sMSYbusWyQX6OpyGlcenvq0f9ZJlxMrSzCXAiOkLESYMzBluohtuv1TC0iOQFX7WfoozSefwIJ5426K4uUJ7jisUdDZI0rs_AagQlsAjx45gZJSNlmw4OjNYfnD_fpt9WfBj4dijHS3HYvSWNf77aCag9IpaphxkkZQ6PojeR9_XM6UGAOWXLq-vG41IgpfUQOp6mXZpc38m6oUGd4Bgw4KKrtDHA_wJadzn0NeHon-WcBuecW0RC_-L81Qap5hmQZsWrVdCD7lksQ9tstIcWeeMBg9iEmjzIeMZlr7oVezHm2XO21B9l7cjo8YOhS0gzJvBfVxLD46dHNgYH9gKEK70NcuUCdG5JM0SV6uZhN7vshfPGtlk_ODB7cf=w1539-h866-no?authuser=0") no-repeat center right/cover; }
 
 .showcase-home .image-about, .showcase-about .image-about, .showcase-contact .image-about {
   background: url("../img/tromsø_Michelleraponi.jpg") no-repeat center right/cover; }
