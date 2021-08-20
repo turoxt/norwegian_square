@@ -103,9 +103,14 @@ h2 {
 // Buttons
 
 // Big button
+
+.btn-tag {
+  text-decoration: none;
+  color: $light-color;
+  text-align: center;
+}
 .btn-big {
   margin: auto;
-  text-align: center;
   border: none;
   background: $main-color;
   color: $light-color;
@@ -115,11 +120,6 @@ h2 {
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.4s ease;
-
-  a {
-    text-decoration: none;
-    color: $light-color;
-  }
 }
 
 .btn-big:hover {

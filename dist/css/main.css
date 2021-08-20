@@ -72,9 +72,13 @@ h2 {
   .flip-card-back h2 {
     padding-top: 33%; }
 
+.btn-tag {
+  text-decoration: none;
+  color: #f8f8ff;
+  text-align: center; }
+
 .btn-big {
   margin: auto;
-  text-align: center;
   border: none;
   background: #dc3545;
   color: #f8f8ff;
@@ -84,9 +88,6 @@ h2 {
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.4s ease; }
-  .btn-big a {
-    text-decoration: none;
-    color: #f8f8ff; }
 
 .btn-big:hover {
   background: #242526; }
