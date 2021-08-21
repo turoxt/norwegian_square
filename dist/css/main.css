@@ -405,9 +405,11 @@ body {
       overflow: hidden;
       transform: translateX(100%); }
     .text-a .img-container .box.active {
+      -webkit-transform: translateX(0%);
       transform: translateX(0%);
       transition: 1s ease-out; }
     .text-a .img-container .scroll-left {
+      -webkit-transform: translateX(-100%);
       transform: translateX(-100%);
       overflow: hidden; }
   .text-a .torleif-container {
@@ -433,14 +435,17 @@ body {
     .text-a .torleif-container .box {
       overflow: hidden;
       transform: translateX(100%);
+      -webkit-transform: translateX(100%);
       opacity: 0; }
     .text-a .torleif-container .box.active {
       transform: translateX(0%);
+      -webkit-transform: translateX(0%);
       overflow: hidden;
       transition: 1s ease-out;
       opacity: 1; }
     .text-a .torleif-container .scroll-left {
       transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
       overflow: hidden;
       opacity: 0; }
   .text-a .video-container .video {
