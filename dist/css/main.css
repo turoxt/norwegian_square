@@ -497,6 +497,35 @@ body {
     .text-a .reviews .second.active {
       display: flex;
       opacity: 1; }
+  .text-a .courses {
+    padding-top: 20px; }
+    .text-a .courses p {
+      text-align: center; }
+    .text-a .courses .container-courses .row {
+      display: flex; }
+      .text-a .courses .container-courses .row .col {
+        padding: 10px; }
+        .text-a .courses .container-courses .row .col img {
+          width: 200px;
+          border-radius: 5px; }
+        .text-a .courses .container-courses .row .col a {
+          text-decoration: none; }
+        .text-a .courses .container-courses .row .col .btn {
+          text-align: center;
+          padding-top: 10px; }
+  .text-a .book-container {
+    display: flex; }
+    .text-a .book-container .col {
+      padding: 10px;
+      display: flex;
+      flex-direction: column; }
+      .text-a .book-container .col img {
+        width: 150px; }
+      .text-a .book-container .col .second {
+        padding-top: 10px; }
+        .text-a .book-container .col .second a {
+          text-decoration: none;
+          padding: 10px 20px; }
 
 .header-a {
   margin: 1.1rem; }

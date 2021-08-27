@@ -284,6 +284,53 @@ body {
       opacity: 1;
     }
   }
+  .courses {
+    padding-top: 20px;
+    p {
+      text-align: center;
+    }
+    .container-courses {
+      .row {
+        display: flex;
+        .col {
+          // text-align: center;
+          padding: 10px;
+
+          img {
+            width: 200px;
+            border-radius: 5px;
+          }
+
+          a {
+            text-decoration: none;
+          }
+
+          .btn {
+            text-align: center;
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  .book-container {
+    display: flex;
+    .col {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 150px;
+      }
+      .second {
+        padding-top: 10px;
+        a {
+          text-decoration: none;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
 }
 
 // BOOK A LESSON
