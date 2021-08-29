@@ -215,6 +215,14 @@
   .btn-reviews {
     padding-top: 30px;
   }
+
+  .book-container {
+    .image-col {
+      text-align: center;
+    }
+
+    flex-direction: column;
+  }
 }
 
 // Min-width 600px

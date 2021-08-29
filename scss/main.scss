@@ -313,23 +313,40 @@ body {
       }
     }
   }
-  .book-container {
-    display: flex;
-    .col {
-      padding: 10px;
+
+  .book-section {
+    padding: 20px 0 20px 0;
+    .book-container {
       display: flex;
-      flex-direction: column;
-      img {
-        width: 150px;
+      padding-top: 20px;
+
+      .first {
+        padding-top: 0px !important;
+        p {
+          padding-top: 10px;
+        }
       }
-      .second {
-        padding-top: 10px;
-        a {
-          text-decoration: none;
-          padding: 10px 20px;
+
+      .col {
+        padding: 10px;
+        // display: flex;
+        // flex-direction: column;
+        img {
+          width: 280px;
+        }
+        .second {
+          padding-top: 10px;
+          a {
+            text-decoration: none;
+            padding: 10px 20px;
+          }
         }
       }
     }
+  }
+
+  .text-book {
+    padding: 10px;
   }
 }
 

@@ -256,7 +256,11 @@ h2 {
     .header-about .img-div {
       text-align: center; }
   .btn-reviews {
-    padding-top: 30px; } }
+    padding-top: 30px; }
+  .book-container {
+    flex-direction: column; }
+    .book-container .image-col {
+      text-align: center; } }
 
 @media (min-width: 600px) {
   .header-about .details {
@@ -513,19 +517,26 @@ body {
         .text-a .courses .container-courses .row .col .btn {
           text-align: center;
           padding-top: 10px; }
-  .text-a .book-container {
-    display: flex; }
-    .text-a .book-container .col {
-      padding: 10px;
+  .text-a .book-section {
+    padding: 20px 0 20px 0; }
+    .text-a .book-section .book-container {
       display: flex;
-      flex-direction: column; }
-      .text-a .book-container .col img {
-        width: 150px; }
-      .text-a .book-container .col .second {
-        padding-top: 10px; }
-        .text-a .book-container .col .second a {
-          text-decoration: none;
-          padding: 10px 20px; }
+      padding-top: 20px; }
+      .text-a .book-section .book-container .first {
+        padding-top: 0px !important; }
+        .text-a .book-section .book-container .first p {
+          padding-top: 10px; }
+      .text-a .book-section .book-container .col {
+        padding: 10px; }
+        .text-a .book-section .book-container .col img {
+          width: 280px; }
+        .text-a .book-section .book-container .col .second {
+          padding-top: 10px; }
+          .text-a .book-section .book-container .col .second a {
+            text-decoration: none;
+            padding: 10px 20px; }
+  .text-a .text-book {
+    padding: 10px; }
 
 .header-a {
   margin: 1.1rem; }
